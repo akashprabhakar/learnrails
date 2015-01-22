@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="page-header">Listing Posts</h1>
+
+
+
+  
+    <% @posts.each do |post| %>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= link_to_unless_current post.title, post %></h3>
+      </div>
+      <div class="panel-body">
+        <%= simple_format post.body %>
+      </div>
+     
+        <p class="btn btn-default"><%= link_to 'Show', post %></p>
+        <p class="btn btn-default"><td><%= link_to 'Edit', edit_post_path(post) %></p>
+        <p class="btn btn-default"><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+     
+     </div>
+    <% end %>
+ 
+<br>
+
+<p class="btn btn-default"><%= link_to 'New Post', new_post_path %></p>

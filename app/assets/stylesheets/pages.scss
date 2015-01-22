@@ -1,0 +1,29 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.body-container {
+  width:700px;
+  height:600px;
+  margin:0 auto;
+}
+
+.body-box {
+  width:700px;
+  height:600px;
+  margin:0 auto;
+}
+
+.page-header {
+  text-align:center;
+}
+
+.jumbotron {
+  border-radius:5px;
+  padding:50px 10px 10px 10px;
+  height:400px;
+}
+
+.text {
+  margin:0 auto;
+}
