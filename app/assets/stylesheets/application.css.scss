@@ -14,7 +14,14 @@
  *= require_self
  @import "bootstrap-sprockets"
  @import "bootstrap"
+ *= require social-share-button
 
  */
 
+.social-share-button-facebook {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/social/facebook.png") no-repeat;
+}
 
