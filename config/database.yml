@@ -84,4 +84,4 @@ production:
   <<: *default
   database: learn_ror_production
   username: postgres
-  password: <%= ENV['annet123'] %>
+  password: annet123
