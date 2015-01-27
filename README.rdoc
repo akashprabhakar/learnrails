@@ -1,28 +1,22 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Learn Rails is an personal website and a blog made by me, while I was trying to learn the Ruby on rails Language.
 
-Things you may want to cover:
+Things I covered in this project :
 
-* Ruby version
+* Generating Static Views
 
-* System dependencies
+* MVC framework
 
-* Configuration
+* Generating models and backend database.
 
-* Database creation
+* Used PAPERCLIP gem for attachments.
 
-* Database initialization
+* For authentication, I have used devise gem.
 
-* How to run the test suite
+* Configures the devise gem
 
-* Services (job queues, cache servers, search engines, etc.)
+* Social Search Button
 
-* Deployment instructions
+* Github and heroku
 
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
