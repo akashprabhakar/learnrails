@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
-   before_filter :authenticate, :except => [ :index, :show ]
+   #before_filter :authenticate, :except => [ :index, :show ]
+   before_filter :authenticate_user!
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   # GET /posts
@@ -74,10 +75,10 @@ class PostsController < ApplicationController
       params.require(:post).permit(:title, :body, :photo)
     end
 
-    def authenticate
-    authenticate_or_request_with_http_basic do |name, password|
-      name == "admin" && password == "secret"
-    end
+    #def authenticate
+    #authenticate_or_request_with_http_basic do |name, password|
+     # name == "admin" && password == "secret"
+    #end
 
-  end  
+  
 end
